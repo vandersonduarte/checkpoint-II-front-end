@@ -1,0 +1,36 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  background-color: bisque;
+  background-image: url(../img/banner-detalhes.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-weight: bold;
+}
+
+h1 {
+  text-align: center;
+  font-size: 4rem;
+  margin: 50px;
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+h4 {
+  font-size: 3rem;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+main {
+  padding-top: 10rem;
+}

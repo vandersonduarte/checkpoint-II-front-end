@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/f3dcfe94d2.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Luppet Shop</title>
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#" id="logo__nav"
+          ><img src="img/logo.webp" alt="Logo luppert Shop"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02"
+          aria-expanded="false"
+          aria-label="Alterna navegação"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <div class="nav__container">
+            <ul class="navbar-nav mt-2 mt-lg-0">
+              <li class="nav-item active">
+                <a class="nav-link text-danger" href="index.html">Home </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#cards__itens">Item</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#sobre-nos">Sobre nós</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pages/login.html">Login</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+
+    <main>
+      <section class="container__banner">
+        <div class="banner">
+          <h1>Bem Vindo ao Luppet Shop</h1>
+          <h4>Experimente algo diferente!</h4>
+          <a href="index.html"
+            ><button class="btn__explorar">Explorar</button>
+          </a>
+        </div>
+      </section>
+
+      <section class="section__cards">
+        <h2 id="cards__itens">Itens</h2>
+
+        <div class="card__container">
+          <div class="card-deck">
+            <div class="card">
+              <img
+                class="card-img-top"
+                src="img/comedouro_duplo.webp"
+                alt="Imagem de capa do card"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Comedouro Duplo De Madeira Com Potes Inox Para Gatos E
+                  Cachorros Natural
+                </h5>
+                <p class="card-text">
+                  Por: R$ 129,90 ou 6x de R$ 21,65 Sem juros
+                </p>
+                <a href="pages/detalhes.html#comedouro__duplo" class="btn btn-primary" id="btn__card">Abrir</a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="card-deck">
+            <div class="card">
+              <img
+                class="card-img-top"
+                src="img/cama-iglu-card.webp"
+                alt="Imagem de capa do card"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Cama Iglu e Toca Para Cachorro Impermeavel Luppet Bege Pets
+                </h5>
+                <p class="card-text">
+                  Por: R$ 229,90 ou 6x de R$ 38,32 Sem juros
+                </p>
+                <a href="pages/detalhes.html#cama__iglu" class="btn btn-primary" id="btn__card">Abrir</a>
+              </div>
+            </div>
+          </div>
+          <div class="card-deck">
+            <div class="card">
+              <img
+                class="card-img-top"
+                src="img/cama-quadrada-card.webp"
+                alt="Imagem de capa do card"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Cama para Cachorro Quadrada Impermeavel Luppet Preto Cachorrinho
+                </h5>
+                <p class="card-text">
+                  Por: R$ 199,90 ou 6x de R$ 33,32 Sem juros 
+                </p>
+                <a href="pages/detalhes.html#cama-quadrada" class="btn btn-primary" id="btn__card">Abrir</a>
+              </div>
+            </div>
+          </div>
+          <div class="card-deck">
+            <div class="card">
+              <img
+                class="card-img-top"
+                src="img/manta-sofa-card.webp"
+                alt="Imagem de capa do card"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Manta para Sofá Luppet com encosto para Cachorro ou Gato Marrom
+                </h5>
+                <p class="card-text">
+                  Por: R$ 109,90 ou 6x de R$ 18,32 Sem juros
+                </p>
+                <a href="pages/detalhes.html#manta-sofa" class="btn btn-primary" id="btn__card">Abrir</a>
+              </div>
+            </div>
+          </div>
+          <div class="card-deck">
+            <div class="card">
+              <img
+                class="card-img-top"
+                src="img/arranhador-card.webp"
+                alt="Imagem de capa do card"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Arranhador para Gatos Sustentável de Chão Luppet
+                </h5>
+                <p class="card-text">
+                  Por: R$ 89,90 ou 6x de R$ 14,98 Sem juros
+                </p>
+                <a href="pages/detalhes.html#arranhador" class="btn btn-primary" id="btn__card">Abrir</a>
+              </div>
+            </div>
+          </div>
+          <div class="card-deck">
+            <div class="card">
+              <img
+                class="card-img-top"
+                src="img/comedouro-patinhas-card.webp"
+                alt="Imagem de capa do card"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Comedouro Com Patinhas De Madeira E Potes Inox Para Cachorro Natural
+                </h5>
+                <p class="card-text">
+                  Por: R$ 129,90 ou 6x de R$ 21,65 Sem juros
+                </p>
+                <a href="pages/detalhes.html#patinhas" class="btn btn-primary" id="btn__card">Abrir</a>
+              </div>
+            </div>
+          </div>
+    </main>
+    <footer>
+      <div class="footer__container" id="sobre-nos">
+        <div class="aluno">
+          <h5>Henrique Schneider</h5>
+          <span>responsavel pelo desenvolvimento do projeto Checkpoint e finalização.</span>
+          <div class="icons">
+            <a href="https://www.linkedin.com/in/henrique-schneider-b86691231/" target="_blanck"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/Henrique-Schneider/" target="_blanck"><i class="fa-brands fa-github"></i></a>
+          </div>
+        </div>
+
+        <div class="aluno">
+          <h5>Vanderson Duarte Alves</h5>
+          <span>responsavel pelo desenvolvimento do projeto Checkpoint e finalização.</span>
+          <div class="icons">
+            <a href="https://www.linkedin.com/feed/?trk=nav_back_to_linkedin" target="_blanck"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/vandersonduarte" target="_blanck"><i class="fa-brands fa-github"></i></a>
+          </div>
+        </div>
+        
+      </div>
+      <div class="direitos">
+        <span>Checkpoint 2 desenvolvido em 2022</span>
+      </div>
+    </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

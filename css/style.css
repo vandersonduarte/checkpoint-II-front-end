@@ -1,0 +1,480 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%; /*equivale a 10px ou 0.625rem*/
+  scroll-behavior: smooth;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+header {
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+}
+
+.nav__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+#logo__nav {
+  margin-right: auto;
+}
+
+.navbar-nav {
+  width: 100%;
+  gap: 4rem;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.nav-item {
+  gap: 3rem;
+  width: auto;
+}
+
+.nav-link {
+  font-weight: 400, normal;
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 0.3rem;
+  bottom: 0;
+  left: 0;
+  background-color: orange;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+.nav-link:hover::after {
+  transform: scaleX(1);
+
+  transform-origin: bottom left;
+}
+
+main {
+  width: 100%;
+}
+
+.container__banner {
+  width: 100%;
+  border: 0.1px solid;
+  height: 100vh;
+}
+.banner > h1 {
+  font-weight: 900, black;
+  font-size: 7.2rem;
+  margin: 10px;
+}
+
+.banner > h4 {
+  font-weight: 300, lighter;
+  font-size: 2.4rem;
+}
+.banner {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-size: cover;
+  gap: 2rem;
+  background-attachment: fixed;
+  position: relative;
+  background-repeat: no-repeat;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+    url(../img/fundo-pets-mb-463x1023.jpg);
+}
+
+.btn__explorar {
+  font-size: 2.4rem;
+  font-weight: 400;
+  letter-spacing: 6%;
+  min-width: 32.2rem;
+  min-height: 7.1rem;
+  text-transform: uppercase;
+  background: rgba(51, 187, 105, 0.05);
+  border: 1px solid #33bb69;
+  box-sizing: border-box;
+  color: white;
+  border-radius: 1.2rem;
+  transition: all 0.3s ease-in-out 0s;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  padding: 1rem;
+}
+
+.btn__explorar::before {
+  content: "";
+  border-radius: 12px;
+  min-width: calc(322px + 8px);
+  min-height: calc(71px + 8px);
+  border: 4px solid #00ffcb;
+  box-shadow: 0 0 60px rgba(0, 255, 203, 0.64);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.btn__explorar:hover,
+.btn__explorar:focus {
+  color: #00ffcb;
+  transform: translateY(-6px);
+}
+
+.btn__explorar:hover::before,
+.btn__explorar:focus::before {
+  opacity: 1;
+}
+
+.btn__explorar::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  border: 6px solid #33bb69;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: ring 1.5s infinite;
+}
+
+.btn__explorar:hover::after,
+.btn__explorar:focus::after {
+  animation: none;
+  display: none;
+}
+
+@keyframes ring {
+  0% {
+    width: 30px;
+    height: 30px;
+    opacity: 1;
+  }
+  100% {
+    width: 200px;
+    height: 200px;
+    opacity: 0;
+  }
+}
+
+.section__cards {
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  background-image: url(../img/home-parallax-lives-3.jpg);
+}
+
+.section__cards > h2 {
+  padding: 6rem;
+  font-weight: 900, black;
+  font-size: 6.4rem;
+  text-align: center;
+  color: #000000;
+  text-shadow: -1px -1px 0px #fff, -1px 1px 0px #fff, 1px -1px 0px #fff,
+    1px 0px 0px #fff;
+  font-weight: bold;
+}
+
+.card__container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.card-deck {
+  width: 100%;
+  height: 100%;
+}
+.card {
+  margin: auto;
+  border-radius: 12px;
+  width: 32.9rem;
+  height: 51.1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  filter: drop-shadow(0px 8px 12px rgba(0, 0, 0, 0.1));
+}
+.container-card__img {
+  display: flex;
+  flex-direction: column;
+}
+
+.card img {
+  border-radius: 12px 12px 0 0;
+  width: 100%;
+  transition: all 0.5s;
+  border: 1rem solid #eeeeee;
+}
+.card img:hover {
+  border: 10px solid #ffbb00;
+  border-radius: 50%;
+  -webkit-filter: drop-shadow(15px 7px 1px rgba(0, 0, 0, 0.5));
+  filter: drop-shadow(15px 7px 1px rgba(0, 0, 0, 0.5));
+  -webkit-transform: rotateZ(-360deg) scale(1.1);
+  transform: rotateZ(-360deg) scale(1.1);
+}
+
+.card-body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  border-radius: 0 0 12px 12px;
+  flex-direction: column;
+}
+
+#btn__card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: auto;
+  align-self: center;
+  width: 276.46px;
+  height: 59.3px;
+  background-color: #33bb69;
+  color: white;
+  font-size: 2.4rem;
+  font-weight: 400;
+  letter-spacing: 6%;
+  border-radius: 12px;
+}
+
+#btn__card:hover {
+  transform: scale(1.1);
+}
+
+.container__cards {
+  width: 100%;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+}
+.card__corpo {
+  width: 32.9rem;
+  display: flex;
+  flex-direction: column;
+  height: 51.1rem;
+  background: #f4f4f4;
+  border-radius: 12px;
+  filter: drop-shadow(0px 8px 12px rgba(0, 0, 0, 0.1));
+}
+.card-title {
+  text-align: start;
+  font-size: 2.4rem;
+  font-weight: 700, bold;
+}
+.card-text {
+  margin: 1rem;
+  font-size: 1.8rem;
+  font-weight: 300, lighter;
+  text-align: center;
+  color: #00000075;
+}
+footer {
+  padding: 42px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  height: 52.3rem;
+
+  background: #171717;
+}
+
+.footer__container {
+  height: 80%;
+  width: 80%;
+  margin: auto;
+  gap: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.aluno {
+  font-size: 1rem;
+  color: white;
+  gap: 10px;
+}
+.aluno > h5 {
+  font-size: 2.4rem;
+  color: #ffffff;
+}
+.aluno span {
+  font-size: 1.4rem;
+  font-weight: 400;
+  opacity: 75%;
+}
+
+.aluno a {
+  font-size: 24px;
+  text-decoration: none;
+  color: white;
+  opacity: 75%;
+}
+.icons {
+  display: flex;
+  gap: 10px;
+}
+
+.direitos {
+  margin-bottom: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.direitos span {
+  font-size: 1.8rem;
+  color: #ffffff80;
+}
+@media (min-width: 768px) {
+  .banner {
+    width: 100%;
+    height: 200%;
+    margin-top: 0%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../img/banner-pet-H.jpg);
+  }
+
+  .banner > h1 {
+    padding: 2.2rem;
+  }
+  header {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  nav {
+    width: 100%;
+  }
+
+  nav ul {
+    gap: 5rem;
+  }
+
+  .section__cards > h2 {
+    padding-top: 50rem;
+  }
+
+  .card__container {
+    width: 100%;
+    padding-bottom: 5rem;
+
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 6rem;
+    justify-content: center;
+  }
+
+  .card-deck {
+    width: 40%;
+  }
+
+  footer {
+    height: 364px;
+  }
+
+  .footer__container {
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+  }
+
+  .direitos span {
+    font-size: 2.4rem;
+  }
+
+  .aluno:last-child .icons {
+    justify-content: end;
+  }
+}
+
+@media (min-width: 1280px) {
+  nav img {
+    padding-left: 10rem;
+  }
+
+  nav {
+    gap: 0;
+    width: 100%;
+  }
+  nav ul {
+    gap: 0;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .nav-link {
+    width: auto;
+  }
+  .nav__container {
+    margin-left: auto;
+    width: 70%;
+  }
+  .banner {
+    width: 100%;
+    height: 100%;
+  }
+
+  .section__cards > h2 {
+    padding-top: 5rem;
+  }
+  .section__cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .card__container {
+    width: 90%;
+    margin-bottom: 10%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .card-deck {
+    width: 32%;
+    height: 65vh;
+  }
+  .card {
+    width: 100%;
+    height: 100%;
+  }
+}
